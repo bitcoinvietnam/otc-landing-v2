@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "title": "BitcoinVN OTC — Private Cryptocurrency Trading",
+    "description": "Discreet, large-volume cryptocurrency execution. Deep liquidity, bespoke service, and absolute privacy since 2014.",
+    "lang": "en"
+  },
+  "brand": {
+    "name": "BitcoinVN",
+    "logoUrl": "assets/images/bvn-star.svg",
+    "logoIconUrl": "https://cdn.brandfetch.io/idjbcThwb0/w/400/h/400/theme/dark/icon.jpeg",
+    "websiteUrl": "https://bitcoinvn.io",
+    "otcUrl": "https://bitcoinvn.io/otc"
+  },
+  "hero": {
+    "headline": "Private <span>OTC</span> Trading",
+    "subheadline": "Deep liquidity. Absolute discretion. Bespoke execution.",
+    "description": "Starting from $50,000 — seamless settlement for Bitcoin, major assets, and stablecoins. No upper limit.",
+    "ctaText": "Request a Quote",
+    "ctaUrl": "https://bitcoinvn.io/otc",
+    "secondaryCtaText": "Explore",
+    "stats": [
+      { "value": "2014", "label": "Established" },
+      { "value": "$10M+", "label": "Trade Capacity" },
+      { "value": "12+", "label": "Markets" },
+      { "value": "103+", "label": "Assets" }
+    ]
+  },
+  "about": {
+    "headline": "Why BitcoinVN OTC",
+    "description": "Off-exchange execution with institutional-grade pricing. Discreet, secure, and tailored for private clients, family offices, and institutions."
+  },
+  "features": [
+    {
+      "icon": "chart-line",
+      "title": "Deep Liquidity",
+      "description": "Access institutional pools. Execute $50K–$10M+ with zero market impact."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Absolute Privacy",
+      "description": "1:1 settlement with full discretion. Your transactions remain confidential."
+    },
+    {
+      "icon": "tags",
+      "title": "Preferred Pricing",
+      "description": "Off-market rates that outperform exchange execution, especially at scale."
+    },
+    {
+      "icon": "infinity",
+      "title": "No Limits",
+      "description": "From 200M VND to virtually unlimited. No ceiling on trade size."
+    },
+    {
+      "icon": "user-tie",
+      "title": "Dedicated Desk",
+      "description": "Seasoned professionals delivering bespoke service for every client."
+    },
+    {
+      "icon": "vault",
+      "title": "Custody Guidance",
+      "description": "Expert advisory on secure asset storage and post-settlement solutions."
+    }
+  ],
+  "process": {
+    "headline": "How It Works",
+    "description": "Four steps. Same-day settlement.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Inquire",
+        "description": "Submit your trade parameters — asset, volume, and settlement preference."
+      },
+      {
+        "number": "02",
+        "title": "Quote",
+        "description": "Receive a personalised, competitive quote within hours."
+      },
+      {
+        "number": "03",
+        "title": "Execute",
+        "description": "Confirm and settle via bank transfer, cash, or crypto."
+      },
+      {
+        "number": "04",
+        "title": "Receive",
+        "description": "Assets delivered securely with optional custody guidance."
+      }
+    ]
+  },
+  "markets": {
+    "headline": "Global Reach",
+    "description": "Liquidity rooted in Vietnam, extending across Asia, Europe, and North America.",
+    "regions": [
+      { "name": "Vietnam", "flag": "\ud83c\uddfb\ud83c\uddf3", "primary": true },
+      { "name": "Japan", "flag": "\ud83c\uddef\ud83c\uddf5", "primary": false },
+      { "name": "Singapore", "flag": "\ud83c\uddf8\ud83c\uddec", "primary": false },
+      { "name": "Malaysia", "flag": "\ud83c\uddf2\ud83c\uddfe", "primary": false },
+      { "name": "Indonesia", "flag": "\ud83c\uddee\ud83c\udde9", "primary": false },
+      { "name": "Thailand", "flag": "\ud83c\uddf9\ud83c\udded", "primary": false },
+      { "name": "Philippines", "flag": "\ud83c\uddf5\ud83c\udded", "primary": false },
+      { "name": "Europe", "flag": "\ud83c\uddea\ud83c\uddfa", "primary": false },
+      { "name": "United States", "flag": "\ud83c\uddfa\ud83c\uddf8", "primary": false },
+      { "name": "Canada", "flag": "\ud83c\udde8\ud83c\udde6", "primary": false },
+      { "name": "Australia", "flag": "\ud83c\udde6\ud83c\uddfa", "primary": false }
+    ]
+  },
+  "clients": {
+    "headline": "Our Clients",
+    "description": "Personal service for HNWI, family offices, and institutional partners.",
+    "items": [
+      {
+        "icon": "gem",
+        "title": "Private Investors",
+        "description": "Bespoke execution for high-net-worth individuals."
+      },
+      {
+        "icon": "building",
+        "title": "Family Offices",
+        "description": "Tailored strategies and institutional custody."
+      },
+      {
+        "icon": "briefcase",
+        "title": "Institutions",
+        "description": "Treasury solutions for corporates and enterprises."
+      },
+      {
+        "icon": "coins",
+        "title": "Funds & Traders",
+        "description": "Deep liquidity for professionals moving size."
+      }
+    ]
+  },
+  "payment": {
+    "headline": "Settlement Options",
+    "description": "Flexible settlement via bank, cash, or direct crypto transfer — same day.",
+    "methods": [
+      { "name": "Bank Transfer", "icon": "building-columns" },
+      { "name": "Cash", "icon": "money-bills" },
+      { "name": "Crypto", "icon": "bitcoin-sign" },
+      { "name": "Stablecoin", "icon": "coins" }
+    ]
+  },
+  "tradeDesk": {
+    "headline": "The OTC Desk",
+    "items": [
+      {
+        "icon": "arrow-down-to-line",
+        "value": "200M VND",
+        "label": "Minimum Trade",
+        "note": "~$10,000 equivalent"
+      },
+      {
+        "icon": "infinity",
+        "value": "No Limit",
+        "label": "Maximum Trade",
+        "note": "Unlimited capacity"
+      },
+      {
+        "icon": "bolt",
+        "value": "Same Day",
+        "label": "Settlement",
+        "note": "Rapid execution"
+      },
+      {
+        "icon": "layer-group",
+        "value": "BTC, ETH, USDT",
+        "label": "Supported Assets",
+        "note": "& further upon request"
+      }
+    ]
+  },
+  "leadership": {
+    "headline": "Our Leadership",
+    "description": "Founded in 2014 and still operated by its original team.",
+    "member": {
+      "name": "Nguyen Tran Bao Phuong",
+      "role": "Co-founder",
+      "quote": "Our team has been able to pioneer this market since its early days. We have successively been able to build up a large liquidity network within Vietnam and nearby markets. If you feel we could provide a solution to your needs — we hope to have a conversation soon!",
+      "social": "https://x.com/PhuongBitcoinVN"
+    }
+  },
+  "bvprime": {
+    "headline": "BV Prime",
+    "description": "An exclusive tier for our most valued OTC clients.",
+    "benefits": [
+      {
+        "icon": "crown",
+        "title": "Priority Execution",
+        "description": "Front-of-queue settlement and dedicated trading hours."
+      },
+      {
+        "icon": "headset",
+        "title": "Personal Account Manager",
+        "description": "A single point of contact for all your trading needs."
+      },
+      {
+        "icon": "percent",
+        "title": "Preferred Rates",
+        "description": "Reduced spreads and volume-based fee tiers."
+      },
+      {
+        "icon": "lock",
+        "title": "Enhanced Custody",
+        "description": "Institutional-grade storage and multi-sig solutions."
+      }
+    ],
+    "cta": "Inquire About BV Prime",
+    "ctaUrl": "https://newsletter.bitcoinvn.io/private-client"
+  },
+  "otcKnowledge": {
+    "headline": "What is OTC?",
+    "description": "Over-the-counter trading, explained.",
+    "items": [
+      {
+        "question": "What does OTC mean?",
+        "answer": "OTC (over-the-counter) refers to private transactions executed directly between two parties — outside of public exchanges. Price, volume, and timing remain confidential."
+      },
+      {
+        "question": "Why trade OTC instead of on an exchange?",
+        "answer": "Large orders on public exchanges cause slippage and price impact. OTC desks access deep liquidity pools, ensuring your trade moves the market zero — not against you."
+      },
+      {
+        "question": "Who uses OTC desks?",
+        "answer": "High-net-worth individuals, family offices, funds, and institutions — anyone moving significant volume who values discretion, speed, and competitive pricing."
+      },
+      {
+        "question": "How is settlement handled?",
+        "answer": "Trades settle same-day via bank transfer, cash, or direct crypto delivery. Each transaction is bespoke — structured around your preferences."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Begin a Conversation",
+    "description": "Our desk is ready. Reach out for a private, no-obligation quote.",
+    "buttonText": "Request a Quote",
+    "buttonUrl": "https://bitcoinvn.io/otc",
+    "note": "Minimum: 200,000,000 VND (~$10,000)"
+  },
+  "footer": {
+    "copyright": "BitcoinVN",
+    "tagline": "Vietnam's premier cryptocurrency exchange since 2014.",
+    "nav": {
+      "heading": "Navigation",
+      "links": [
+        { "label": "Prices", "url": "https://bitcoinvn.io/prices" },
+        { "label": "Coins & Fees", "url": "https://bitcoinvn.io/info" },
+        { "label": "API", "url": "https://bitcoinvn.io/api/doc" },
+        { "label": "Referral Program", "url": "https://bitcoinvn.io/referral-program" },
+        { "label": "Rewards", "url": "https://bitcoinvn.io/rewards" },
+        { "label": "FAQ", "url": "https://support.bitcoinvn.io/help/en-us/1-bitcoinvn" }
+      ]
+    },
+    "company": {
+      "heading": "BitcoinVN",
+      "links": [
+        { "label": "About Us", "url": "https://bitcoinvn.io/about-us" },
+        { "label": "OTC", "url": "#hero" },
+        { "label": "BTM", "url": "https://bitcoinvn.io/btm" },
+        { "label": "Shop", "url": "https://bitcoinvn.io/shop" },
+        { "label": "News", "url": "https://bitcoinvn.io/news" }
+      ]
+    },
+    "legal": {
+      "heading": "Legal",
+      "links": [
+        { "label": "Terms of Service", "url": "https://support.bitcoinvn.io/help/en-us/3-general/8-terms-of-service" },
+        { "label": "KYC/AML Policy", "url": "https://support.bitcoinvn.io/help/en-us/3-general/4-kyc-aml-policy" },
+        { "label": "Privacy Policy", "url": "https://bitcoinvn.io/privacy" },
+        { "label": "Brand", "url": "https://support.bitcoinvn.io/help/en-us/3-general/2-brand" }
+      ]
+    },
+    "social": [
+      { "name": "Telegram", "url": "https://t.me/bitcoinvn_community", "icon": "telegram" },
+      { "name": "Twitter", "url": "https://twitter.com/Bitcoin_Vietnam", "icon": "x-twitter" },
+      { "name": "Facebook", "url": "https://www.facebook.com/www.bitcoinvn.io", "icon": "facebook" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/company/bitcoin-vietnam", "icon": "linkedin" },
+      { "name": "TikTok", "url": "https://www.tiktok.com/@bitcoinvn.io", "icon": "tiktok" }
+    ]
+  }
+}

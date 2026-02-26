@@ -1,0 +1,442 @@
+---
+layout: base.njk
+---
+
+<!-- Animated background -->
+<div class="bg-mesh" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+<div class="bg-blob-mid" aria-hidden="true"></div>
+<div class="bg-blob-top-right" aria-hidden="true"></div>
+<div class="bg-blob-bottom-left" aria-hidden="true"></div>
+<div class="bg-particles" aria-hidden="true">
+  <span class="particle particle--1"></span>
+  <span class="particle particle--2"></span>
+  <span class="particle particle--3"></span>
+  <span class="particle particle--4"></span>
+  <span class="particle particle--5"></span>
+  <span class="particle particle--6"></span>
+  <span class="particle particle--7"></span>
+  <span class="particle particle--8"></span>
+</div>
+<div class="bg-streaks" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+{# ─── NAVBAR ─── #}
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="/" class="navbar__logo">
+      <img src="{{ otc.brand.logoUrl }}" alt="{{ otc.brand.name }} Logo">
+      <span class="navbar__logo-text">BitcoinVN</span>
+      <span class="navbar__logo-badge">OTC</span>
+    </a>
+
+    <ul class="navbar__links" id="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#bvprime">BV Prime</a></li>
+      <li><a href="#otc-knowledge">What is OTC</a></li>
+      <li>
+        <a href="#contact" class="navbar__cta">
+          <i class="fa-solid fa-arrow-right"></i> Get a Quote
+        </a>
+      </li>
+    </ul>
+
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+{# ─── HERO ─── #}
+<section class="hero section" id="hero">
+  <div class="orb orb--blue" style="width:500px;height:500px;top:-100px;right:-150px;" aria-hidden="true"></div>
+  <div class="orb orb--orange" style="width:350px;height:350px;bottom:-50px;left:-100px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__centered">
+      <div class="hero__badge">
+        <i class="fa-solid fa-circle-check"></i>
+        Trusted Since 2014
+      </div>
+
+      <h1>{{ otc.hero.headline | safe }}</h1>
+      <p class="hero__sub">{{ otc.hero.subheadline }}</p>
+      <p class="hero__desc">{{ otc.hero.description }}</p>
+
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">
+          <i class="fa-solid fa-paper-plane"></i> {{ otc.hero.ctaText }}
+        </a>
+        <a href="#features" class="btn btn--outline">
+          {{ otc.hero.secondaryCtaText }} <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        {% for stat in otc.hero.stats %}
+        <div class="stat">
+          <div class="stat__value">{{ stat.value }}</div>
+          <div class="stat__label">{{ stat.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ─── TRADE DESK ─── #}
+<section class="section trade-desk fade-section" id="trade-desk">
+  <div class="orb orb--gold" style="width:400px;height:400px;top:-80px;right:-150px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.tradeDesk.headline }}</h2>
+    </div>
+
+    <div class="trade-desk__bar fade-child">
+      {% for item in otc.tradeDesk.items %}
+      <div class="trade-desk__stat{% if not loop.last %} trade-desk__stat--bordered{% endif %}">
+        <div class="trade-desk__stat-icon">
+          <i class="fa-solid fa-{{ item.icon }}"></i>
+        </div>
+        <div class="trade-desk__stat-content">
+          <div class="trade-desk__value">{{ item.value }}</div>
+          <div class="trade-desk__label">{{ item.label }}</div>
+          <div class="trade-desk__note">{{ item.note }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ─── ABOUT / FEATURES ─── #}
+<section class="section features fade-section" id="features">
+  <div class="orb orb--gold" style="width:400px;height:400px;top:50px;left:-200px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.about.headline }}</h2>
+    </div>
+
+    <div class="features__list">
+      {% for feat in otc.features %}
+      <div class="feature-item fade-child">
+        <div class="feature-item__index">0{{ loop.index }}</div>
+        <div class="feature-item__icon">
+          <i class="fa-solid fa-{{ feat.icon }}"></i>
+        </div>
+        <div class="feature-item__content">
+          <h3>{{ feat.title }}</h3>
+          <p>{{ feat.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ─── PROCESS ─── #}
+<section class="section process fade-section" id="process">
+  <div class="orb orb--blue" style="width:300px;height:300px;bottom:0;right:-100px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.process.headline }}</h2>
+    </div>
+
+    <div class="process__timeline">
+      {% for step in otc.process.steps %}
+      <div class="process-step fade-child">
+        <div class="process-step__number">{{ step.number }}</div>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ─── CLIENTS ─── #}
+<section class="section clients fade-section" id="clients">
+  <div class="orb orb--gold" style="width:300px;height:300px;bottom:-50px;left:-100px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.clients.headline }}</h2>
+      <p>{{ otc.clients.description }}</p>
+    </div>
+
+    <div class="clients__grid">
+      {% for client in otc.clients.items %}
+      <div class="client-card fade-child">
+        <div class="client-card__icon">
+          <i class="fa-solid fa-{{ client.icon }}"></i>
+        </div>
+        <div class="client-card__body">
+          <h3>{{ client.title }}</h3>
+          <p>{{ client.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ─── LEADERSHIP ─── #}
+<section class="section leadership fade-section" id="leadership">
+  <div class="orb orb--blue" style="width:300px;height:300px;top:40px;right:-120px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.leadership.headline }}</h2>
+      <p>{{ otc.leadership.description }}</p>
+    </div>
+
+    <div class="leadership__featured">
+      <blockquote class="leader-quote fade-child">
+        <p>{{ otc.leadership.member.quote }}</p>
+        <footer>
+          <strong>{{ otc.leadership.member.name }}</strong>
+          <span>{{ otc.leadership.member.role }}</span>
+          <a href="{{ otc.leadership.member.social }}" target="_blank" rel="noopener" aria-label="Follow on X">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+{# ─── BV PRIME ─── #}
+<section class="section bvprime fade-section" id="bvprime">
+  <div class="orb orb--gold" style="width:400px;height:400px;bottom:-80px;left:-150px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.bvprime.headline }}</h2>
+      <p>{{ otc.bvprime.description }}</p>
+    </div>
+
+    <div class="bvprime__layout">
+      {% set hero_benefit = otc.bvprime.benefits[0] %}
+      <div class="bvprime__hero-card fade-child">
+        <div class="bvprime__hero-icon">
+          <i class="fa-solid fa-{{ hero_benefit.icon }}"></i>
+        </div>
+        <h3>{{ hero_benefit.title }}</h3>
+        <p>{{ hero_benefit.description }}</p>
+      </div>
+
+      <div class="bvprime__stack">
+        {% for benefit in otc.bvprime.benefits %}
+        {% if not loop.first %}
+        <div class="bvprime__stack-item fade-child">
+          <div class="bvprime__stack-icon">
+            <i class="fa-solid fa-{{ benefit.icon }}"></i>
+          </div>
+          <div class="bvprime__stack-content">
+            <h3>{{ benefit.title }}</h3>
+            <p>{{ benefit.description }}</p>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="bvprime__footer">
+      <a href="{{ otc.bvprime.ctaUrl }}" target="_blank" rel="noopener" class="btn btn--primary">
+        <i class="fa-solid fa-gem"></i> {{ otc.bvprime.cta }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{# ─── WHAT IS OTC ─── #}
+<section class="section otc-knowledge fade-section" id="otc-knowledge">
+  <div class="orb orb--orange" style="width:350px;height:350px;top:50px;right:-150px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.otcKnowledge.headline }}</h2>
+      <p>{{ otc.otcKnowledge.description }}</p>
+    </div>
+
+    <div class="knowledge__accordion">
+      {% for item in otc.otcKnowledge.items %}
+      <details class="knowledge__item fade-child"{% if loop.first %} open{% endif %}>
+        <summary class="knowledge__question">
+          <span>{{ item.question }}</span>
+          <i class="fa-solid fa-chevron-down knowledge__chevron"></i>
+        </summary>
+        <div class="knowledge__answer">
+          <div class="knowledge__answer-inner">
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ─── CONTACT / INQUIRY FORM ─── #}
+<section class="section contact-section fade-section" id="contact">
+  <div class="orb orb--gold" style="width:350px;height:350px;top:-80px;left:-120px;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ otc.cta.headline }}</h2>
+      <p>{{ otc.cta.description }}</p>
+    </div>
+
+    <div class="contact__wrapper">
+      <div id="zammad-inline-form"></div>
+      <div class="contact__note">{{ otc.cta.note }}</div>
+    </div>
+  </div>
+</section>
+
+{# ─── FOOTER ─── #}
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="/" class="footer__brand-logo">
+        <img src="{{ otc.brand.logoUrl }}" alt="{{ otc.brand.name }}">
+        <span class="footer__brand-name">BitcoinVN</span>
+        <span class="footer__brand-badge">OTC</span>
+      </a>
+      <p class="footer__tagline">{{ otc.footer.tagline }}</p>
+    </div>
+
+    <ul class="footer__links">
+      {% for link in otc.footer.company.links %}
+      <li><a href="{{ link.url }}" {% if 'http' in link.url %}target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <div class="footer__social">
+      {% for s in otc.footer.social %}
+      <a href="{{ s.url }}" aria-label="{{ s.name }}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-{{ s.icon }}"></i>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="footer__bottom">
+      &copy; {% year %} {{ otc.footer.copyright }}. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+{# ─── SCRIPTS ─── #}
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script id="zammad_form_script" src="https://support.bitcoinvn.io/assets/form/form.js"></script>
+
+<script>
+  /* ── Navbar scroll effect ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  /* ── Mobile menu toggle ── */
+  const toggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  /* ── Fade-in on scroll (IntersectionObserver) ── */
+  const faders = document.querySelectorAll('.fade-section');
+  const observerOpts = {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px',
+  };
+
+  const fadeObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOpts);
+
+  faders.forEach(el => fadeObserver.observe(el));
+
+  /* ── Zammad OTC inquiry form (inline) ── */
+  $(function () {
+    $('#zammad-inline-form').ZammadForm({
+      messageTitle: 'OTC Inquiry',
+      messageSubmit: 'Submit',
+      messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll be in touch shortly.',
+      modal: false,
+    });
+
+    /* Inject currency select after Zammad renders */
+    var waitForForm = setInterval(function () {
+      var $body = $('#zammad-inline-form textarea[name="body"]');
+      if (!$body.length) return;
+      clearInterval(waitForForm);
+
+      var selectHtml =
+        '<div class="form-group currency-select-group">' +
+          '<label for="otc-currency">Currency</label>' +
+          '<select id="otc-currency" class="form-control" required>' +
+            '<option value="">— Select currency —</option>' +
+            '<option value="USDT (Tether)">USDT (Tether)</option>' +
+            '<option value="BTC (Bitcoin)">BTC (Bitcoin)</option>' +
+            '<option value="USDC">USDC</option>' +
+            '<option value="Other">Other</option>' +
+          '</select>' +
+        '</div>';
+
+      $body.closest('.form-group').before(selectHtml);
+
+      /* Prepend currency to message on submit */
+      var $form = $('#zammad-inline-form form');
+      $form.on('submit', function (e) {
+        var $select = $('#otc-currency');
+        var currency = $select.val();
+        if (!currency) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          $select.css('border-color', 'rgba(220, 80, 80, 0.6)');
+          $select.focus();
+          return false;
+        }
+        $select.css('border-color', '');
+        var original = $body.val();
+        $body.val('[Auto attached from OTC form: Customer selected currency: ' + currency + ']\n\n' + original);
+      });
+    }, 200);
+  });
+
+  /* ── FAQ accordion: only one open at a time ── */
+  document.querySelectorAll('.knowledge__item').forEach(item => {
+    item.addEventListener('toggle', function () {
+      if (this.open) {
+        document.querySelectorAll('.knowledge__item').forEach(other => {
+          if (other !== item) other.removeAttribute('open');
+        });
+      }
+    });
+  });
+
+  /* ── Smooth scroll for anchor links ── */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        navLinks.classList.remove('active');
+      }
+    });
+  });
+</script>
