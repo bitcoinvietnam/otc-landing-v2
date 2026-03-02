@@ -2,24 +2,8 @@
 layout: base.njk
 ---
 
-<!-- Animated background -->
+<!-- Background -->
 <div class="bg-mesh" aria-hidden="true"></div>
-<div class="bg-grain" aria-hidden="true"></div>
-<div class="bg-blob-mid" aria-hidden="true"></div>
-<div class="bg-blob-top-right" aria-hidden="true"></div>
-<div class="bg-blob-bottom-left" aria-hidden="true"></div>
-<div class="bg-particles" aria-hidden="true">
-  <span class="particle particle--1"></span>
-  <span class="particle particle--2"></span>
-  <span class="particle particle--3"></span>
-  <span class="particle particle--4"></span>
-  <span class="particle particle--5"></span>
-  <span class="particle particle--6"></span>
-  <span class="particle particle--7"></span>
-  <span class="particle particle--8"></span>
-</div>
-<div class="bg-streaks" aria-hidden="true"></div>
-<div class="bg-vignette" aria-hidden="true"></div>
 
 {# ─── NAVBAR ─── #}
 <nav class="navbar" id="navbar">
@@ -52,9 +36,6 @@ layout: base.njk
 
 {# ─── HERO ─── #}
 <section class="hero section" id="hero">
-  <div class="orb orb--blue" style="width:500px;height:500px;top:-100px;right:-150px;" aria-hidden="true"></div>
-  <div class="orb orb--orange" style="width:350px;height:350px;bottom:-50px;left:-100px;" aria-hidden="true"></div>
-
   <div class="container">
     <div class="hero__centered">
       <div class="hero__badge">
@@ -88,15 +69,13 @@ layout: base.njk
 </section>
 
 {# ─── TRADE DESK ─── #}
-<section class="section trade-desk fade-section" id="trade-desk">
-  <div class="orb orb--gold" style="width:400px;height:400px;top:-80px;right:-150px;" aria-hidden="true"></div>
-
+<section class="section trade-desk" id="trade-desk">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.tradeDesk.headline }}</h2>
     </div>
 
-    <div class="trade-desk__bar fade-child">
+    <div class="trade-desk__bar">
       {% for item in otc.tradeDesk.items %}
       <div class="trade-desk__stat{% if not loop.last %} trade-desk__stat--bordered{% endif %}">
         <div class="trade-desk__stat-icon">
@@ -114,9 +93,7 @@ layout: base.njk
 </section>
 
 {# ─── ABOUT / FEATURES ─── #}
-<section class="section features fade-section" id="features">
-  <div class="orb orb--gold" style="width:400px;height:400px;top:50px;left:-200px;" aria-hidden="true"></div>
-
+<section class="section features" id="features">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.about.headline }}</h2>
@@ -124,7 +101,7 @@ layout: base.njk
 
     <div class="features__list">
       {% for feat in otc.features %}
-      <div class="feature-item fade-child">
+      <div class="feature-item">
         <div class="feature-item__index">0{{ loop.index }}</div>
         <div class="feature-item__icon">
           <i class="fa-solid fa-{{ feat.icon }}"></i>
@@ -140,9 +117,7 @@ layout: base.njk
 </section>
 
 {# ─── PROCESS ─── #}
-<section class="section process fade-section" id="process">
-  <div class="orb orb--blue" style="width:300px;height:300px;bottom:0;right:-100px;" aria-hidden="true"></div>
-
+<section class="section process" id="process">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.process.headline }}</h2>
@@ -150,7 +125,7 @@ layout: base.njk
 
     <div class="process__timeline">
       {% for step in otc.process.steps %}
-      <div class="process-step fade-child">
+      <div class="process-step">
         <div class="process-step__number">{{ step.number }}</div>
         <h3>{{ step.title }}</h3>
         <p>{{ step.description }}</p>
@@ -161,9 +136,7 @@ layout: base.njk
 </section>
 
 {# ─── CLIENTS ─── #}
-<section class="section clients fade-section" id="clients">
-  <div class="orb orb--gold" style="width:300px;height:300px;bottom:-50px;left:-100px;" aria-hidden="true"></div>
-
+<section class="section clients" id="clients">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.clients.headline }}</h2>
@@ -172,7 +145,7 @@ layout: base.njk
 
     <div class="clients__grid">
       {% for client in otc.clients.items %}
-      <div class="client-card fade-child">
+      <div class="client-card">
         <div class="client-card__icon">
           <i class="fa-solid fa-{{ client.icon }}"></i>
         </div>
@@ -187,9 +160,7 @@ layout: base.njk
 </section>
 
 {# ─── LEADERSHIP ─── #}
-<section class="section leadership fade-section" id="leadership">
-  <div class="orb orb--blue" style="width:300px;height:300px;top:40px;right:-120px;" aria-hidden="true"></div>
-
+<section class="section leadership" id="leadership">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.leadership.headline }}</h2>
@@ -197,7 +168,7 @@ layout: base.njk
     </div>
 
     <div class="leadership__featured">
-      <blockquote class="leader-quote fade-child">
+      <blockquote class="leader-quote">
         <p>{{ otc.leadership.member.quote }}</p>
         <footer>
           <strong>{{ otc.leadership.member.name }}</strong>
@@ -212,9 +183,7 @@ layout: base.njk
 </section>
 
 {# ─── BV PRIME ─── #}
-<section class="section bvprime fade-section" id="bvprime">
-  <div class="orb orb--gold" style="width:400px;height:400px;bottom:-80px;left:-150px;" aria-hidden="true"></div>
-
+<section class="section bvprime" id="bvprime">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.bvprime.headline }}</h2>
@@ -223,7 +192,7 @@ layout: base.njk
 
     <div class="bvprime__layout">
       {% set hero_benefit = otc.bvprime.benefits[0] %}
-      <div class="bvprime__hero-card fade-child">
+      <div class="bvprime__hero-card">
         <div class="bvprime__hero-icon">
           <i class="fa-solid fa-{{ hero_benefit.icon }}"></i>
         </div>
@@ -234,7 +203,7 @@ layout: base.njk
       <div class="bvprime__stack">
         {% for benefit in otc.bvprime.benefits %}
         {% if not loop.first %}
-        <div class="bvprime__stack-item fade-child">
+        <div class="bvprime__stack-item">
           <div class="bvprime__stack-icon">
             <i class="fa-solid fa-{{ benefit.icon }}"></i>
           </div>
@@ -257,9 +226,7 @@ layout: base.njk
 </section>
 
 {# ─── WHAT IS OTC ─── #}
-<section class="section otc-knowledge fade-section" id="otc-knowledge">
-  <div class="orb orb--orange" style="width:350px;height:350px;top:50px;right:-150px;" aria-hidden="true"></div>
-
+<section class="section otc-knowledge" id="otc-knowledge">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.otcKnowledge.headline }}</h2>
@@ -268,7 +235,7 @@ layout: base.njk
 
     <div class="knowledge__accordion">
       {% for item in otc.otcKnowledge.items %}
-      <details class="knowledge__item fade-child"{% if loop.first %} open{% endif %}>
+      <details class="knowledge__item"{% if loop.first %} open{% endif %}>
         <summary class="knowledge__question">
           <span>{{ item.question }}</span>
           <i class="fa-solid fa-chevron-down knowledge__chevron"></i>
@@ -285,9 +252,7 @@ layout: base.njk
 </section>
 
 {# ─── CONTACT / INQUIRY FORM ─── #}
-<section class="section contact-section fade-section" id="contact">
-  <div class="orb orb--gold" style="width:350px;height:350px;top:-80px;left:-120px;" aria-hidden="true"></div>
-
+<section class="section contact-section" id="contact">
   <div class="container">
     <div class="section-header">
       <h2>{{ otc.cta.headline }}</h2>
@@ -351,24 +316,6 @@ layout: base.njk
     navLinks.classList.toggle('active');
   });
 
-  /* ── Fade-in on scroll (IntersectionObserver) ── */
-  const faders = document.querySelectorAll('.fade-section');
-  const observerOpts = {
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px',
-  };
-
-  const fadeObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOpts);
-
-  faders.forEach(el => fadeObserver.observe(el));
-
   /* ── Zammad OTC inquiry form (inline) ── */
   $(function () {
     $('#zammad-inline-form').ZammadForm({
@@ -428,15 +375,4 @@ layout: base.njk
     });
   });
 
-  /* ── Smooth scroll for anchor links ── */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        navLinks.classList.remove('active');
-      }
-    });
-  });
 </script>
