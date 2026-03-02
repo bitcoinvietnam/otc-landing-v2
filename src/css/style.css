@@ -2,7 +2,7 @@
    BitcoinVN OTC Landing Page — Styles
    Palette: Black Titanium & Champagne (Centurion)
    Accent: Crypto Teal (sparingly)
-   Font: Be Vietnam Pro
+   Font: Inter
    ======================================================== */
 
 /* --- Reset & Base ----------------------------------------------- */
@@ -39,8 +39,8 @@
   --gray-500: #44475a;
   --white: #edeef2;
   /* typography */
-  --font: 'DM Sans', system-ui, -apple-system, sans-serif;
-  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
   /* shape */
   --radius: 12px;
   --radius-lg: 20px;
@@ -609,23 +609,25 @@ a {
 }
 
 .navbar__logo-badge {
-  font-size: 0.85rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 900;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold);
-  background: rgba(196, 162, 101, 0.1);
-  border: 1px solid rgba(196, 162, 101, 0.25);
-  padding: 5px 14px;
-  border-radius: 6px;
+  background: linear-gradient(135deg, #d4b574, var(--gold-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: none;
+  padding: 0;
   line-height: 1;
-  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  filter: drop-shadow(0 0 6px rgba(196, 162, 101, 0.15));
+  transition: filter 0.35s ease;
 }
 
 .navbar__logo:hover .navbar__logo-badge {
-  background: rgba(196, 162, 101, 0.18);
-  border-color: rgba(196, 162, 101, 0.4);
-  box-shadow: 0 0 14px rgba(196, 162, 101, 0.2);
+  filter: drop-shadow(0 0 10px rgba(196, 162, 101, 0.3));
+  text-shadow: 0 0 14px rgba(196, 162, 101, 0.3);
 }
 
 .navbar__links {
@@ -2364,6 +2366,9 @@ a {
   box-shadow: 0 0 20px rgba(196, 162, 101, 0.08) !important;
   width: 100% !important;
   margin-top: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 #zammad-inline-form .btn-primary:hover,
