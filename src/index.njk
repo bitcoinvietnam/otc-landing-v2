@@ -353,6 +353,7 @@ layout: base.njk
           return false;
         }
         $select.css('border-color', '');
+        $body.css('color', 'transparent');
         var original = $body.val();
         $body.val('[Auto attached from OTC form: Customer selected currency: ' + currency + ']\n\n' + original);
       });
