@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "BitcoinVN OTC — Private Cryptocurrency Trading",
+    "title": "BitcoinVN OTC - Private Cryptocurrency Trading",
     "description": "Discreet, large-volume cryptocurrency execution. Deep liquidity, bespoke service, and absolute privacy since 2014.",
     "lang": "en"
   },
@@ -13,8 +13,8 @@
   },
   "hero": {
     "headline": "Private <span>OTC</span> Trading",
-    "subheadline": "Deep liquidity. Absolute discretion. Bespoke execution.",
-    "description": "Starting from $50,000 — seamless settlement for Bitcoin, major assets, and stablecoins. No upper limit.",
+    "subheadline": "Deep liquidity. Professional discretion. Bespoke execution.",
+    "description": "Starting from $50,000 -seamless settlement for Bitcoin, major assets, and stablecoins. No upper limit.",
     "ctaText": "Request a Quote",
     "ctaUrl": "https://bitcoinvn.io/otc",
     "secondaryCtaText": "Explore",
@@ -63,7 +63,7 @@
       {
         "number": "01",
         "title": "Inquire",
-        "description": "Submit your trade parameters — asset, volume, and settlement preference."
+        "description": "Submit your trade parameters -asset, volume, and settlement preference."
       },
       {
         "number": "02",
@@ -127,7 +127,7 @@
   },
   "payment": {
     "headline": "Settlement Options",
-    "description": "Flexible settlement via bank, cash, or direct crypto transfer — same day.",
+    "description": "Flexible settlement via bank, cash, or direct crypto transfer -same day.",
     "methods": [
       { "name": "Bank Transfer", "icon": "building-columns" },
       { "name": "Cash", "icon": "money-bills" },
@@ -170,7 +170,7 @@
     "member": {
       "name": "Nguyen Tran Bao Phuong",
       "role": "Co-founder",
-      "quote": "Our team has been able to pioneer this market since its early days. We have successively been able to build up a large liquidity network within Vietnam and nearby markets. If you feel we could provide a solution to your needs — we hope to have a conversation soon!",
+      "quote": "Our team has been able to pioneer this market since its early days. We have successively been able to build up a large liquidity network within Vietnam and nearby markets. If you feel we could provide a solution to your needs -we hope to have a conversation soon!",
       "social": "https://x.com/PhuongBitcoinVN"
     }
   },
@@ -208,19 +208,19 @@
     "items": [
       {
         "question": "What does OTC mean?",
-        "answer": "OTC (over-the-counter) refers to private transactions executed directly between two parties — outside of public exchanges. Price, volume, and timing remain confidential."
+        "answer": "OTC (over-the-counter) refers to private transactions executed directly between two parties -outside of public exchanges. Price, volume, and timing remain confidential."
       },
       {
         "question": "Why trade OTC instead of on an exchange?",
-        "answer": "Large orders on public exchanges cause slippage and price impact. OTC desks access deep liquidity pools, ensuring your trade moves the market zero — not against you."
+        "answer": "Large orders on public exchanges cause slippage and unnecessary price impact. With our OTC desk, lock is lock. Once we quote and confirm -your price is guaranteed. Our experienced trading team knows how to source liquidity discreetly and avoid moving the market, giving you clean execution backed by deep liquidity access."
       },
       {
         "question": "Who uses OTC desks?",
-        "answer": "High-net-worth individuals, family offices, funds, and institutions — anyone moving significant volume who values discretion, speed, and competitive pricing."
+        "answer": "High-net-worth individuals, family offices, funds, and institutions -anyone moving significant volume who values discretion, speed, and competitive pricing."
       },
       {
         "question": "How is settlement handled?",
-        "answer": "Trades settle same-day via bank transfer, cash, or direct crypto delivery. Each transaction is bespoke — structured around your preferences."
+        "answer": "Trades settle same-day via bank transfer, cash, or direct crypto delivery. Each transaction is bespoke -structured around your preferences."
       }
     ]
   },
