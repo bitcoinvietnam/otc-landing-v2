@@ -1269,15 +1269,17 @@ a {
 }
 
 .footer__brand-badge {
-  font-size: 0.7rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 900;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold);
-  background: rgba(196, 162, 101, 0.1);
-  border: 1px solid rgba(196, 162, 101, 0.2);
-  padding: 3px 10px;
-  border-radius: 4px;
+  background: linear-gradient(135deg, #d4b574, var(--gold-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: none;
+  padding: 0;
   line-height: 1;
 }
 
