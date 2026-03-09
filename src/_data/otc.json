@@ -139,7 +139,7 @@
     "headline": "The OTC Desk",
     "items": [
       {
-        "icon": "arrow-down-to-line",
+        "icon": "dollar-sign",
         "value": "$10,000",
         "label": "Minimum Trade",
         "note": "Or equivalent"
